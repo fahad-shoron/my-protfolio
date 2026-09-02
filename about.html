@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Protfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <nav class="bg-base-100 shadow-sm">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/service.html">Service</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./index.html" >&lt;/Fahad Shoron&gt;</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+    <main class="h-screen">
+      <section class="page-title-hero text-center">
+    <div class="container mx-auto px-6">
+      
+      <h1 class="text-5xl font-bold mb-3 mt-12">About Me</h1>
+      <p class="text-base-content/60 max-w-lg mx-auto">Developer, designer, and digital problem-solver — here's my story.</p>
+    </div>
+  </section>
+
+  <!-- ─── Personal Biography ─── -->
+  <section class="section-pad bg-base-100 mt-20">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row gap-12 items-center reveal">
+        <div class="lg:w-2/5 flex-shrink-0">
+          <div class="relative">
+            <img src="pfp.jpeg"
+                 alt="Profile large" class="w-72 h-72 rounded-3xl object-cover shadow-2xl mx-auto ring-8 ring-primary/10"/>
+            <div class="absolute -bottom-4 -right-4 bg-primary text-primary-content rounded-2xl p-4 shadow-lg text-center">
+              <p class="text-3xl font-bold">6+</p>
+              <p class="text-xs">Years Exp.</p>
+            </div>
+          </div>
+          <!-- Personal info box -->
+          <div class="card bg-base-200 mt-10 p-6 text-sm space-y-3">
+            <div class="flex justify-between"><span class="font-semibold">Full Name</span><span class="text-base-content/70">Abdullah Al Fahad</span></div>
+            <div class="divider my-0"></div>
+            <div class="flex justify-between"><span class="font-semibold">Date of Birth</span><span class="text-base-content/70">October 22, 2005</span></div>
+            <div class="divider my-0"></div>
+            <div class="flex justify-between"><span class="font-semibold">Email</span><span class="text-base-content/70">fahadshoron2005@gmail.com</span></div>
+            <div class="divider my-0"></div>
+            <div class="flex justify-between"><span class="font-semibold">Phone</span><span class="text-base-content/70">+880 1872-893583</span></div>
+            <div class="divider my-0"></div>
+            <div class="flex justify-between"><span class="font-semibold">Location</span><span class="text-base-content/70">Middle paikpara 136/B, Dhaka, BD</span></div>
+            <div class="divider my-0"></div>
+            <div class="flex justify-between"><span class="font-semibold">Availability</span><span class="badge badge-success badge-sm">Open to Work</span></div>
+          </div>
+        </div>
+        <div class="lg:w-3/5 space-y-6">
+          <p class="text-primary font-semibold uppercase tracking-widest text-sm">Personal Biography</p>
+          <h2 class="text-4xl font-bold">Passionate About Building What Matters</h2>
+          <p class="text-base-content/70 leading-relaxed">
+            My journey into technology started at age 14 when I built my first website on GeoCities. What began as curiosity evolved into a career spanning front-end engineering, back-end architecture, cloud infrastructure, and product design.
+          </p>
+          <p class="text-base-content/70 leading-relaxed">
+            After graduating with a B.Sc. in Computer Science, I joined a digital agency where I led development for 30+ client projects. Later, I transitioned to freelancing — which gave me the freedom to choose meaningful work and build long-term partnerships with clients across four continents.
+          </p>
+          <p class="text-base-content/70 leading-relaxed">
+            Outside of screens, I mentor junior developers through an online community, write about design systems on Medium, and occasionally contribute to open-source projects. I believe the best code is the code that serves people well.
+          </p>
+          <div class="flex gap-4 flex-wrap">
+            <a href="portfolio.html" class="btn btn-primary rounded-full">View Portfolio</a>
+            <a href="#" class="btn btn-outline rounded-full">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    </main>
+
+    <footer
+      class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+    >
+      <aside>
+        <p>
+           Copyright © {new Date().getFullYear()} - All right reserved by TechVeltro
+          Industries Ltd
+        </p>
+      </aside>
+    </footer>
+  </body>
+</html>

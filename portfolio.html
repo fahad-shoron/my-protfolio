@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Protfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <nav class="bg-base-100 shadow-sm">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/service.html">Service</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./index.html">&lt;/Fahad Shoron&gt;</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+    <main class="h-screen flex-1">
+      <!-- ─── Page Title ─── -->
+  <section class="page-title-hero text-center">
+    <div class="container mx-auto px-6">
+      
+      <h1 class="m-5 text-5xl font-bold mb-3 mt-12">My Portfolio</h1>
+      <p class="text-base-content/60 max-w-lg mx-auto">A snapshot of my professional journey — education, skills, and experience.</p>
+    </div>
+  </section>
+
+  <!-- ─── Personal Information ─── -->
+  <section class="section-pad bg-base-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-10 reveal">
+        <p class="text-primary font-semibold uppercase tracking-widest text-sm mb-2 mt-2">Who I Am</p>
+        <h2 class="text-4xl font-bold">Personal Information</h2>
+      </div>
+      <div class="card bg-base-200 shadow p-8 reveal">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Full Name:</span><span class="text-base-content/75">Abdullah Al Fahad</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Date of Birth:</span><span class="text-base-content/75">October 22, 2005</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Nationality:</span><span class="text-base-content/75">Bangladeshi</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Gender:</span><span class="text-base-content/75">Male</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Marital Status:</span><span class="text-base-content/75">Single</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Languages:</span><span class="text-base-content/75">English, Bangla</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Email:</span><span class="text-base-content/75">fahadshoron2005@gmail.com</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Phone:</span><span class="text-base-content/75">+880 1872-893583</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Address:</span><span class="text-base-content/75">Dhaka, Bangladesh</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Website:</span><span class="text-base-content/75">www.fahadshoron.io</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">Portfolio:</span><span class="text-base-content/75">behance.net/fahadshoron</span></div>
+          <div class="flex gap-3"><span class="text-primary font-semibold w-28 shrink-0">GitHub:</span><span class="text-base-content/75">github.com/fahad-shoron</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Education ─── -->
+  <section class="section-pad bg-base-200">
+    <div class="container mx-auto px-6">
+      <div class="m-5 text-center mb-10 reveal">
+        <p class="text-secondary font-semibold uppercase tracking-widest text-sm mb-2">Academic</p>
+        <h2 class="text-4xl font-bold">Education</h2>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-6 reveal">
+        <!-- Education item -->
+        <div class="card bg-base-100 shadow p-6 flex flex-col sm:flex-row gap-4 card-hover">
+          <div class="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center text-2xl shrink-0">🎓</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap justify-between gap-2">
+              <h3 class="font-bold text-lg">B.Sc. in Computer Science</h3>
+              <span class="badge badge-primary badge-outline">2026(on going)</span>
+            </div>
+            <p class="text-secondary font-medium text-sm mt-1">University of Liberal Arts Bangladesh (ULAB)</p>
+            <p class="text-base-content/65 text-sm mt-2">Graduated with distinction. Major in software engineering with coursework in algorithms, data structures, operating systems, and machine learning. CGPA: 3.85/4.00</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow p-6 flex flex-col sm:flex-row gap-4 card-hover">
+          <div class="w-14 h-14 rounded-xl bg-secondary/15 flex items-center justify-center text-2xl shrink-0">🏫</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap justify-between gap-2">
+              <h3 class="font-bold text-lg">Higher Secondary Certificate (HSC)</h3>
+              <span class="badge badge-secondary badge-outline">2024 – 2025</span>
+            </div>
+            <p class="text-secondary font-medium text-sm mt-1">BCIC College, Dhaka</p>
+            <p class="text-base-content/65 text-sm mt-2">Science group. GPA 4.50. Focused on Physics, Mathematics, and Chemistry. Active in programming club and science olympiad.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow p-6 flex flex-col sm:flex-row gap-4 card-hover">
+          <div class="w-14 h-14 rounded-xl bg-accent/15 flex items-center justify-center text-2xl shrink-0">📗</div>
+          <div class="flex-1">
+            <div class="flex flex-wrap justify-between gap-2">
+              <h3 class="font-bold text-lg">Secondary School Certificate (SSC)</h3>
+              <span class="badge badge-accent badge-outline">2022 – 2023</span>
+            </div>
+            <p class="text-secondary font-medium text-sm mt-1">Model Academy High School</p>
+            <p class="text-base-content/65 text-sm mt-2">Science group. GPA 5.00. First place in national junior programming competition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Special Skills ─── -->
+  <section class="section-pad bg-base-100">
+    <div class=" m-5 container mx-auto px-6">
+      <div class="text-center mb-10 reveal">
+        <p class="text-accent font-semibold uppercase tracking-widest text-sm mb-2">Strengths</p>
+        <h2 class="text-4xl font-bold">Special Skills</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+        <div class="card bg-gradient-to-br from-primary/10 to-primary/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">⚡</div>
+          <h3 class="font-bold mb-2">Performance Optimization</h3>
+          <p class="text-sm text-base-content/65">Web vitals, lazy loading, and caching strategies that deliver sub-second load times.</p>
+        </div>
+        <div class="card bg-gradient-to-br from-secondary/10 to-secondary/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">♿</div>
+          <h3 class="font-bold mb-2">Accessibility (a11y)</h3>
+          <p class="text-sm text-base-content/65">WCAG 2.1 AA compliance, screen reader testing, and inclusive design patterns.</p>
+        </div>
+        <div class="card bg-gradient-to-br from-accent/10 to-accent/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">🔒</div>
+          <h3 class="font-bold mb-2">Security Best Practices</h3>
+          <p class="text-sm text-base-content/65">OAuth, JWT, OWASP top-10 mitigations, and secure API design patterns.</p>
+        </div>
+        <div class="card bg-gradient-to-br from-success/10 to-success/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">🗣️</div>
+          <h3 class="font-bold mb-2">Client Communication</h3>
+          <p class="text-sm text-base-content/65">Clear, proactive updates — bridging technical and non-technical stakeholders fluently.</p>
+        </div>
+        <div class="card bg-gradient-to-br from-warning/10 to-warning/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">🧪</div>
+          <h3 class="font-bold mb-2">Test-Driven Development</h3>
+          <p class="text-sm text-base-content/65">Unit, integration, and E2E testing with Jest, Cypress, and Playwright.</p>
+        </div>
+        <div class="card bg-gradient-to-br from-error/10 to-error/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">🎯</div>
+          <h3 class="font-bold mb-2">Product Thinking</h3>
+          <p class="text-sm text-base-content/65">I understand the why behind every feature — not just how to build it.</p>
+        </div>
+        <div class="card bg-gradient-to-br from-info/10 to-info/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">🔄</div>
+          <h3 class="font-bold mb-2">Agile Workflows</h3>
+          <p class="text-sm text-base-content/65">Scrum, Kanban, sprint planning, and retrospectives for smooth team delivery.</p>
+        </div>
+        <div class="card bg-gradient-to-br from-primary/10 to-accent/5 p-6 card-hover text-center">
+          <div class="text-4xl mb-3">📊</div>
+          <h3 class="font-bold mb-2">Data Visualization</h3>
+          <p class="text-sm text-base-content/65">D3.js, Chart.js, and Recharts — turning raw data into actionable insight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Training & Certifications (Bootstrap Modal) ─── -->
+  <section class="section-pad bg-base-200">
+    <div class="container mx-auto px-6">
+      <div class=" m-5 text-center mb-10 reveal">
+        <p class="text-primary font-semibold uppercase tracking-widest text-sm mb-2">Credentials</p>
+        <h2 class="text-4xl font-bold">Training & Certifications</h2>
+        <p class="text-base-content/60 mt-2">Click any certificate to view details.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+
+        <!-- Cert 1 -->
+        <div class="card bg-base-100 shadow p-5 card-hover cursor-pointer" data-bs-toggle="modal" data-bs-target="#certModal1">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center text-2xl">🏅</div>
+            <div>
+              <p class="font-bold text-sm">AWS Certified Solutions Architect</p>
+              <p class="text-xs text-base-content/50">Amazon Web Services · 2023</p>
+            </div>
+          </div>
+          <span class="badge badge-primary badge-sm mt-3">View Details →</span>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="card bg-base-100 shadow p-5 card-hover cursor-pointer" data-bs-toggle="modal" data-bs-target="#certModal2">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-secondary/15 flex items-center justify-center text-2xl">🎖️</div>
+            <div>
+              <p class="font-bold text-sm">Google UX Design Professional</p>
+              <p class="text-xs text-base-content/50">Google · Coursera · 2022</p>
+            </div>
+          </div>
+          <span class="badge badge-secondary badge-sm mt-3">View Details →</span>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="card bg-base-100 shadow p-5 card-hover cursor-pointer" data-bs-toggle="modal" data-bs-target="#certModal3">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center text-2xl">📜</div>
+            <div>
+              <p class="font-bold text-sm">Meta React Native Developer</p>
+              <p class="text-xs text-base-content/50">Meta · Coursera · 2022</p>
+            </div>
+          </div>
+          <span class="badge badge-accent badge-sm mt-3">View Details →</span>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="card bg-base-100 shadow p-5 card-hover cursor-pointer" data-bs-toggle="modal" data-bs-target="#certModal4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-success/15 flex items-center justify-center text-2xl">🏆</div>
+            <div>
+              <p class="font-bold text-sm">MongoDB Certified Developer</p>
+              <p class="text-xs text-base-content/50">MongoDB University · 2021</p>
+            </div>
+          </div>
+          <span class="badge badge-success badge-sm mt-3">View Details →</span>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="card bg-base-100 shadow p-5 card-hover cursor-pointer" data-bs-toggle="modal" data-bs-target="#certModal5">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-warning/15 flex items-center justify-center text-2xl">🌟</div>
+            <div>
+              <p class="font-bold text-sm">Full-Stack Web Dev Bootcamp</p>
+              <p class="text-xs text-base-content/50">App Academy · 2020</p>
+            </div>
+          </div>
+          <span class="badge badge-warning badge-sm mt-3">View Details →</span>
+        </div>
+
+        <!-- Cert 6 -->
+        <div class="card bg-base-100 shadow p-5 card-hover cursor-pointer" data-bs-toggle="modal" data-bs-target="#certModal6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-error/15 flex items-center justify-center text-2xl">🔐</div>
+            <div>
+              <p class="font-bold text-sm">Cybersecurity Foundations</p>
+              <p class="text-xs text-base-content/50">ISC² · 2023</p>
+            </div>
+          </div>
+          <span class="badge badge-error badge-sm mt-3">View Details →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Work Experience ─── -->
+  <section class="section-pad bg-base-100">
+    <div class="container mx-auto px-6">
+      <div class="m-5 text-center mb-10 reveal">
+        <p class="text-success font-semibold uppercase tracking-widest text-sm mb-2">Career Path</p>
+        <h2 class="text-4xl font-bold">Working Experience</h2>
+      </div>
+      <div class="max-w-3xl mx-auto reveal">
+        <div class="timeline-line space-y-8">
+
+          <div class="relative">
+            <div class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-primary border-4 border-base-100"></div>
+            <div class="card bg-base-200 shadow p-6 card-hover">
+              <div class="flex flex-wrap justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="font-bold text-lg">Senior Full-Stack Developer</h3>
+                  <p class="text-primary font-medium text-sm">TechFlow Inc., Remote</p>
+                </div>
+                <span class="badge badge-primary">2022 – Present</span>
+              </div>
+              <ul class="text-sm text-base-content/70 space-y-1 list-disc list-inside">
+                <li>Led architecture for a SaaS analytics platform serving 50K+ users</li>
+                <li>Reduced page load time by 62% via code-splitting and CDN strategy</li>
+                <li>Mentored a team of 4 junior developers through Agile sprints</li>
+                <li>Integrated Stripe payments and built a custom subscription management dashboard</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-secondary border-4 border-base-100"></div>
+            <div class="card bg-base-200 shadow p-6 card-hover">
+              <div class="flex flex-wrap justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="font-bold text-lg">Frontend Developer</h3>
+                  <p class="text-secondary font-medium text-sm">CreativePixels Agency, Dhaka</p>
+                </div>
+                <span class="badge badge-secondary">2020 – 2022</span>
+              </div>
+              <ul class="text-sm text-base-content/70 space-y-1 list-disc list-inside">
+                <li>Developed 25+ responsive websites and web apps for diverse clients</li>
+                <li>Implemented design systems used by a team of 8 developers</li>
+                <li>Collaborated directly with UX designers to produce pixel-perfect interfaces</li>
+                <li>Improved SEO scores from average 45 to 90+ across client portfolio</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-accent border-4 border-base-100"></div>
+            <div class="card bg-base-200 shadow p-6 card-hover">
+              <div class="flex flex-wrap justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="font-bold text-lg">Junior Web Developer</h3>
+                  <p class="text-accent font-medium text-sm">Startup Hub Dhaka, Dhaka</p>
+                </div>
+                <span class="badge badge-accent">2018 – 2020</span>
+              </div>
+              <ul class="text-sm text-base-content/70 space-y-1 list-disc list-inside">
+                <li>Built MVP for 5 early-stage startups including 2 that went on to raise funding</li>
+                <li>Gained hands-on experience with React, REST APIs, and SQL databases</li>
+                <li>Contributed to open-source component library used by 200+ developers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-base-300 border-4 border-base-100"></div>
+            <div class="card bg-base-200 shadow p-6 card-hover">
+              <div class="flex flex-wrap justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="font-bold text-lg">Freelance Developer</h3>
+                  <p class="text-base-content/60 font-medium text-sm">Upwork / Fiverr, Remote</p>
+                </div>
+                <span class="badge badge-ghost">2016 – 2018</span>
+              </div>
+              <ul class="text-sm text-base-content/70 space-y-1 list-disc list-inside">
+                <li>Completed 40+ freelance projects across Upwork and Fiverr</li>
+                <li>Maintained a Top Rated Seller status with 100% job success score</li>
+                <li>Specialized in WordPress customization and small business websites</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Bootstrap Modals for Certifications ─── -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="certModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-3 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center px-6 pb-8">
+          <div class="text-5xl mb-3">🏅</div>
+          <h4 class="font-bold text-xl mb-1">AWS Certified Solutions Architect</h4>
+          <p class="text-sm text-gray-500 mb-4">Amazon Web Services · Associate Level</p>
+          <div class="badge bg-primary/15 text-primary border-0 px-4 py-2 rounded-full mb-4">Issued: June 2023</div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            This certification validates expertise in designing distributed systems on AWS. Topics covered include EC2, S3, RDS, Lambda, VPC architecture, load balancing, and auto-scaling patterns.
+          </p>
+          <p class="text-xs text-gray-400 mt-4">Certificate ID: AWS-SA-2023-REID-4872</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="certModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-3 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body text-center px-6 pb-8">
+          <div class="text-5xl mb-3">🎖️</div>
+          <h4 class="font-bold text-xl mb-1">Google UX Design Professional Certificate</h4>
+          <p class="text-sm text-gray-500 mb-4">Google · Coursera · 7-Course Series</p>
+          <div class="badge bg-primary/15 text-primary border-0 px-4 py-2 rounded-full mb-4">Issued: November 2022</div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Comprehensive UX design training covering user research, wireframing, prototyping, usability testing, and design thinking. Completed 5 real-world portfolio projects using Figma.
+          </p>
+          <p class="text-xs text-gray-400 mt-4">Certificate ID: GUX-PROF-2022-ARD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="certModal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-3 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body text-center px-6 pb-8">
+          <div class="text-5xl mb-3">📜</div>
+          <h4 class="font-bold text-xl mb-1">Meta React Native Developer</h4>
+          <p class="text-sm text-gray-500 mb-4">Meta · Coursera · Professional Certificate</p>
+          <div class="badge bg-primary/15 text-primary border-0 px-4 py-2 rounded-full mb-4">Issued: August 2022</div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Advanced React Native development: state management with Redux, navigation patterns, native APIs, performance profiling, and publishing to the App Store & Play Store.
+          </p>
+          <p class="text-xs text-gray-400 mt-4">Certificate ID: META-RN-2022-ALEX</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="certModal4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-3 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body text-center px-6 pb-8">
+          <div class="text-5xl mb-3">🏆</div>
+          <h4 class="font-bold text-xl mb-1">MongoDB Certified Developer Associate</h4>
+          <p class="text-sm text-gray-500 mb-4">MongoDB University · Associate Level</p>
+          <div class="badge bg-primary/15 text-primary border-0 px-4 py-2 rounded-full mb-4">Issued: March 2021</div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Covers CRUD operations, aggregation pipeline, indexing strategies, data modeling, transactions, and Atlas cloud deployment for production MongoDB applications.
+          </p>
+          <p class="text-xs text-gray-400 mt-4">Certificate ID: MDB-DEV-2021-3344</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="certModal5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-3 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body text-center px-6 pb-8">
+          <div class="text-5xl mb-3">🌟</div>
+          <h4 class="font-bold text-xl mb-1">Full-Stack Web Development Bootcamp</h4>
+          <p class="text-sm text-gray-500 mb-4">App Academy · 1000-Hour Intensive Program</p>
+          <div class="badge bg-primary/15 text-primary border-0 px-4 py-2 rounded-full mb-4">Issued: December 2020</div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Intensive coding bootcamp covering JavaScript, Python, React, Redux, Flask, SQL, and Git. Acceptance rate under 3%. Built 4 full-stack capstone projects during the program.
+          </p>
+          <p class="text-xs text-gray-400 mt-4">Certificate ID: AA-FSW-2020-CLASS112</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="certModal6" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-3 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body text-center px-6 pb-8">
+          <div class="text-5xl mb-3">🔐</div>
+          <h4 class="font-bold text-xl mb-1">ISC² Certified in Cybersecurity (CC)</h4>
+          <p class="text-sm text-gray-500 mb-4">ISC² · Entry-Level Certification</p>
+          <div class="badge bg-primary/15 text-primary border-0 px-4 py-2 rounded-full mb-4">Issued: February 2023</div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Foundational security concepts: security principles, network security, access control, incident response, and business continuity. Validates security-aware development practices.
+          </p>
+          <p class="text-xs text-gray-400 mt-4">Certificate ID: ISC2-CC-2023-AR9981</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+    </main>
+
+    <footer
+      class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+    >
+      <aside>
+        <p>
+          Copyright © {new Date().getFullYear()} - All right reserved by TechVeltro
+          Industries Ltd
+        </p>
+      </aside>
+    </footer>
+  </body>
+</html>

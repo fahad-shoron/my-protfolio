@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Protfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <nav class="bg-base-100 shadow-sm">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/service.html">Service</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./index.html"
+            >&lt;/Fahad Shoron&gt;</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+    <main class="h-screen flex-1">
+      <!-- ─── Page Title ─── -->
+      <section class="page-title-hero text-center">
+        <div class="container mx-auto px-6">
+          
+          <h1 class="text-5xl font-bold mb-3 mt-12">Services</h1>
+          <p class="text-base-content/60 max-w-lg mx-auto">
+            Comprehensive digital solutions — from a single landing page to
+            enterprise SaaS platforms.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── All Services Grid ─── -->
+      <section class="section-pad bg-base-100">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12 reveal">
+            <p
+              class="text-primary font-semibold uppercase tracking-widest text-sm mb-2"
+            >
+              What I Do
+            </p>
+            <h2 class="text-4xl font-bold mb-3">All Services</h2>
+            <p class="text-base-content/60 max-w-xl mx-auto">
+              Every engagement starts with understanding your goals — then
+              executing with precision.
+            </p>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-3xl mb-3"
+                >
+                  🌐
+                </div>
+                <h3 class="card-title text-xl">Web Development</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  End-to-end web applications built with React, Next.js,
+                  Node.js, and PostgreSQL. I handle everything from database
+                  schema to deployment pipeline.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ Custom web apps (SaaS, portals, dashboards)</li>
+                  <li>✓ REST & GraphQL API development</li>
+                  <li>✓ CMS integration (Contentful, Sanity)</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-primary badge-outline"
+                    >From $800</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-primary btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-3xl mb-3"
+                >
+                  🎨
+                </div>
+                <h3 class="card-title text-xl">UI/UX Design</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  User research, wireframing, high-fidelity Figma prototypes,
+                  and design systems that teams can build from confidently.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ UX research & user journey mapping</li>
+                  <li>✓ Figma prototypes & design systems</li>
+                  <li>✓ Usability testing & iteration</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-secondary badge-outline"
+                    >From $400</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-secondary btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center text-3xl mb-3"
+                >
+                  📱
+                </div>
+                <h3 class="card-title text-xl">Mobile App Development</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Cross-platform iOS & Android apps using React Native — with
+                  native performance, smooth animations, and offline support.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ React Native (iOS + Android)</li>
+                  <li>✓ App Store & Play Store submission</li>
+                  <li>✓ Push notifications & analytics</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-accent badge-outline"
+                    >From $1,200</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-accent btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-success/10 flex items-center justify-center text-3xl mb-3"
+                >
+                  🛒
+                </div>
+                <h3 class="card-title text-xl">E-Commerce Solutions</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Custom Shopify themes, WooCommerce plugins, and headless
+                  commerce setups optimized for conversion and speed.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ Shopify / WooCommerce development</li>
+                  <li>✓ Payment gateway integration</li>
+                  <li>✓ Inventory & order management</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-success badge-outline"
+                    >From $600</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-success btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-warning/10 flex items-center justify-center text-3xl mb-3"
+                >
+                  ☁️
+                </div>
+                <h3 class="card-title text-xl">Cloud & DevOps</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Infrastructure setup, CI/CD pipelines, Docker
+                  containerization, and AWS/Vercel deployment with monitoring
+                  and alerting.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ AWS, Vercel, Railway deployment</li>
+                  <li>✓ Docker & Kubernetes basics</li>
+                  <li>✓ CI/CD with GitHub Actions</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-warning badge-outline"
+                    >From $500</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-warning btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-error/10 flex items-center justify-center text-3xl mb-3"
+                >
+                  🔧
+                </div>
+                <h3 class="card-title text-xl">Maintenance & Support</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Ongoing technical support, performance monitoring, security
+                  updates, and feature additions for existing websites and apps.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ Monthly retainer plans available</li>
+                  <li>✓ Bug fixes & performance audits</li>
+                  <li>✓ Security patches & updates</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-error badge-outline"
+                    >From $200/mo</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-error btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── Client Logos ─── -->
+      <section class="py-16 bg-base-200">
+        <div class="container mx-auto px-6">
+          <p class="text-center text-base-content/50 font-medium mb-8 reveal">
+            Trusted by these companies
+          </p>
+          <div class="flex flex-wrap justify-center gap-8 items-center reveal">
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              TechFlow
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              ShopNova
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              Vantage AI
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              FinEdge
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              GlobalMed
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              EduPath
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FAQ ─── -->
+      <section class="section-pad bg-base-100">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12 reveal">
+            <p
+              class="text-primary font-semibold uppercase tracking-widest text-sm mb-2"
+            >
+              Common Questions
+            </p>
+            <h2 class="text-4xl font-bold mb-3">Frequently Asked Questions</h2>
+            <p class="text-base-content/60 max-w-xl mx-auto">
+              Answers to the questions I hear most often from new clients.
+            </p>
+          </div>
+          <div class="max-w-3xl mx-auto space-y-3 reveal">
+            <div
+              class="faq-item card bg-base-100 border border-base-200 shadow-sm overflow-hidden"
+            >
+              <button
+                class="faq-trigger w-full text-left p-5 flex justify-between items-center font-semibold hover:bg-base-200 transition-colors"
+              >
+                <span>How do I start a project with you?</span>
+                <span
+                  class="faq-icon text-2xl text-primary font-light w-8 text-center"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-body hidden px-5 pb-5 text-sm text-base-content/70 leading-relaxed border-t border-base-200 pt-4"
+              >
+                Starting is simple: reach out through the
+                <a href="contact.html" class="link link-primary"
+                  >contact form</a
+                >
+                with a brief description of your project, timeline, and budget.
+                I'll respond within 24 hours to schedule a free discovery call.
+                After understanding your needs, I'll send a detailed proposal
+                with scope, timeline, and pricing before any work begins.
+              </div>
+            </div>
+
+            <div
+              class="faq-item card bg-base-100 border border-base-200 shadow-sm overflow-hidden"
+            >
+              <button
+                class="faq-trigger w-full text-left p-5 flex justify-between items-center font-semibold hover:bg-base-200 transition-colors"
+              >
+                <span>How long does a typical project take?</span>
+                <span
+                  class="faq-icon text-2xl text-primary font-light w-8 text-center"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-body hidden px-5 pb-5 text-sm text-base-content/70 leading-relaxed border-t border-base-200 pt-4"
+              >
+                Project timelines vary by complexity. A simple landing page
+                takes 1–2 weeks. A business website with CMS takes 3–5 weeks. A
+                full web application or mobile app typically takes 6–16 weeks
+                depending on features. I always provide a detailed timeline in
+                the proposal, and I communicate proactively if anything changes
+                along the way.
+              </div>
+            </div>
+
+            <div
+              class="faq-item card bg-base-100 border border-base-200 shadow-sm overflow-hidden"
+            >
+              <button
+                class="faq-trigger w-full text-left p-5 flex justify-between items-center font-semibold hover:bg-base-200 transition-colors"
+              >
+                <span>What are your payment terms?</span>
+                <span
+                  class="faq-icon text-2xl text-primary font-light w-8 text-center"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-body hidden px-5 pb-5 text-sm text-base-content/70 leading-relaxed border-t border-base-200 pt-4"
+              >
+                For most projects I require a 30% deposit to begin work, 40% at
+                the midpoint milestone, and the remaining 30% upon delivery. For
+                larger projects I can offer a milestone-based payment schedule.
+                I accept bank transfer, bKash, Payoneer, and Wise. All projects
+                include a written agreement before any payment is requested.
+              </div>
+            </div>
+
+            <div
+              class="faq-item card bg-base-100 border border-base-200 shadow-sm overflow-hidden"
+            >
+              <button
+                class="faq-trigger w-full text-left p-5 flex justify-between items-center font-semibold hover:bg-base-200 transition-colors"
+              >
+                <span>Do you offer post-launch support?</span>
+                <span
+                  class="faq-icon text-2xl text-primary font-light w-8 text-center"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-body hidden px-5 pb-5 text-sm text-base-content/70 leading-relaxed border-t border-base-200 pt-4"
+              >
+                Yes — all projects include a 30-day bug-fix period after launch
+                at no extra cost. Beyond that, I offer monthly maintenance
+                retainer packages starting at $200/month, which include security
+                updates, performance monitoring, minor feature additions, and
+                priority support response times. Ongoing retainers can be
+                cancelled anytime with 30-day notice.
+              </div>
+            </div>
+
+            <div
+              class="faq-item card bg-base-100 border border-base-200 shadow-sm overflow-hidden"
+            >
+              <button
+                class="faq-trigger w-full text-left p-5 flex justify-between items-center font-semibold hover:bg-base-200 transition-colors"
+              >
+                <span>Will I own the code and intellectual property?</span>
+                <span
+                  class="faq-icon text-2xl text-primary font-light w-8 text-center"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-body hidden px-5 pb-5 text-sm text-base-content/70 leading-relaxed border-t border-base-200 pt-4"
+              >
+                Absolutely. Upon final payment, full ownership of all source
+                code, design files, and related intellectual property transfers
+                to you. I retain no rights over your project. The code is clean,
+                well-documented, and hosted in your own repository from day one.
+                I use open-source libraries which remain under their respective
+                licenses.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-20 bg-primary text-primary-content text-center">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold mb-3 reveal">
+            Ready to Build Something Great?
+          </h2>
+          <p class="opacity-80 max-w-md mx-auto mb-8 reveal">
+            Let's talk about your project. Free consultation, no pressure.
+          </p>
+          <a
+            href="contact.html"
+            class="btn bg-primary-content text-primary rounded-full px-10 font-bold reveal"
+            >Start a Conversation</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer
+      class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+    >
+      <aside>
+        <p>
+          Copyright © {new Date().getFullYear()} - All right reserved by TechVeltro
+          Industries Ltd
+        </p>
+      </aside>
+    </footer>
+  </body>
+</html>
