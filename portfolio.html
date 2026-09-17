@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Protfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <nav class="bg-base-100 shadow-sm">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/service.html">Service</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./index.html"
+            >&lt;/Fahad Shoron&gt;</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+    <main class="h-screen flex-1">
+      <!-- ─── Page Title ─── -->
+      
+  <div class="py-10 text-center">
+    <h1 class="text-5xl font-bold mb-3 mt-4">Portfolio</h1>
+    <p class="mt-2 text-base-content/70">Personal info, education, skills & experience</p>
+  </div>
+
+  <section class="py-12 px-4 max-w-4xl mx-auto space-y-12">
+    <!-- Personal Info -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4 ">Personal Information</h2>
+      <div class="card bg-base-100 shadow border">
+        <div class="card-body">
+          <div class="grid sm:grid-cols-2 gap-3 text-sm">
+            <p><strong>Name:</strong> Abdullah Al Fahad</p>
+            <p><strong>Phone:</strong> +880 1872 893583</p>
+            <p><strong>Email:</strong> fahadshoron2005@gmail.com</p>
+            <p><strong>WhatsApp:</strong> +880 1872 893583</p>
+            <p><strong>Current Status:</strong> CSE Student (Ongoing)</p>
+            <p><strong>Availability:</strong> Open to immediate joining</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4 ">Education Information</h2>
+      <div class="space-y-4">
+        <div class="card bg-base-100 shadow border">
+          <div class="card-body py-5">
+            <h3 class="font-semibold">Bachelor of Science in Computer Science & Engineering</h3>
+            <p class="text-sm text-base-content/70">University of Liberal Arts Bangladesh · Ongoing</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow border">
+          <div class="card-body py-5">
+            <h3 class="font-semibold">Higher Secondary Certificate (HSC) — Science</h3>
+            <p class="text-sm text-base-content/70">GPA: 4.50 · Completed</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow border">
+          <div class="card-body py-5">
+            <h3 class="font-semibold">Secondary School Certificate (SSC) — Science</h3>
+            <p class="text-sm text-base-content/70">GPA: 5.00 (Perfect) · Completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special Skills -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4 ">Special Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="badge badge-primary badge-lg">Facebook Page Management</span>
+        <span class="badge badge-primary badge-lg">Meta Ads Manager</span>
+        <span class="badge badge-primary badge-lg">Audience Targeting</span>
+        <span class="badge badge-primary badge-lg">Community Moderation</span>
+        <span class="badge badge-primary badge-lg">Customer Inbox Handling</span>
+        <span class="badge badge-primary badge-lg">Product Catalogue</span>
+        <span class="badge badge-primary badge-lg">Performance Analytics</span>
+        <span class="badge badge-outline badge-lg">MS Office</span>
+        <span class="badge badge-outline badge-lg">UI/UX Sense</span>
+        <span class="badge badge-outline badge-lg">AI Tools</span>
+      </div>
+    </div>
+
+    <!-- Training / Certification (Modal) -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4 ">Training & Certification</h2>
+      <button class="btn btn-primary btn-sm" onclick="document.getElementById('cert_modal').showModal()">View Details</button>
+      <dialog id="cert_modal" class="modal">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Training & Certification</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>• Hands-on experience with Meta Ads Manager & Boosting</li>
+            <li>• Practical knowledge of Facebook Shop & Catalogue management</li>
+            <li>• Community moderation and brand reputation management</li>
+            <li>• UI/UX design background for social content</li>
+            <li>• Proficient with AI tools for content & productivity</li>
+          </ul>
+          <div class="modal-action">
+            <form method="dialog"><button class="btn">Close</button></form>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+    <!-- Working Experience -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4 ">Working Experience</h2>
+      <div class="card bg-base-100 shadow border">
+        <div class="card-body">
+          <h3 class="font-semibold">Page Moderator / Office Executive / Meta Ads Specialist</h3>
+          <p class="text-sm text-base-content/70 mb-3">Freelance / Project-based</p>
+          <ul class="list-disc list-inside text-sm space-y-1">
+            <li>Full management of Facebook business pages</li>
+            <li>Customer inbox handling & comment moderation</li>
+            <li>Product upload & catalogue management</li>
+            <li>Meta Ads planning, targeting, A/B testing & reporting</li>
+            <li>Office administrative support and documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <div id="site-footer"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/nav.js"></script>
+      <script src="js/main.js"></script>
+    </main>
+
+    <footer
+      class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+    >
+      <aside>
+        <p id="time">
+          Copyright © {new Date().getFullYear()} - All right reserved by
+          TechVeltro Industries Ltd
+        </p>
+      </aside>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

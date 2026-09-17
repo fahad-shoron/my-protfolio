@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Protfolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <nav class="bg-base-100 shadow-sm">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/service.html">Service</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./index.html"
+            >&lt;/Fahad Shoron&gt;</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+    <main class="h-screen flex-1">
+      <section>
+        <div class="flex justify-center w-full mt-4">
+          <div
+            class="carousel w-full max-w-[1120px] h-[320px] mx-auto rounded-xl overflow-hidden"
+          >
+            <div id="slide1" class="carousel-item relative w-full h-full">
+              <img
+                alt="Tailwind CSS slide example"
+                src="https://i.pinimg.com/736x/4a/d1/9f/4ad19fdc639ea32f55088b29436fe24e.jpg"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center p-4"
+              >
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-3">
+                  Welcome to My Portfolio
+                </h1>
+                <p class="text-lg text-white/80">
+                  UI/UX Designer & Frontend Developer
+                </p>
+              </div>
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full h-full">
+              <img
+                alt="Tailwind CSS slide example"
+                src="https://i.pinimg.com/736x/f3/7c/0c/f37c0c8837a246f05def16771ad9b8c0.jpg"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center p-4"
+              >
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-3">
+                  Creative Design Solutions
+                </h1>
+                <p class="text-lg text-white/80">
+                  Building responsive and modern websites
+                </p>
+              </div>
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full h-full">
+              <img
+                alt="Tailwind CSS slide example"
+                src="https://i.pinimg.com/1200x/3b/70/e3/3b70e36d40365a3edf9e1cc660a22c27.jpg"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center p-4"
+              >
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-3">
+                  Simple Web Design
+                </h1>
+                <p class="text-lg text-white/80">
+                  I create clean and responsive websites.t
+                </p>
+              </div>
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full h-full">
+              <img
+                alt="Tailwind CSS slide example"
+                src="https://i.pinimg.com/736x/5b/ab/d8/5babd8e02a27109d5ce5bf05a8b20f7e.jpg"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-white text-center p-4"
+              >
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-3">
+                  NSDA Level 3 Certified
+                </h1>
+                <p class="text-lg text-white/80">
+                  Quality standard web design & development
+                </p>
+              </div>
+              <div
+                class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT ME (with real photo) -->
+      <section id="about" class="py-16 bg-base-100">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-10 text-primary">
+            About Me
+          </h2>
+          <div class="flex flex-col md:flex-row gap-10 items-center">
+            <div class="w-full md:w-2/5 flex justify-center">
+              <div class="avatar">
+                <div
+                  class="w-64 md:w-72 rounded-2xl shadow-xl ring ring-primary ring-offset-base-100 ring-offset-4"
+                >
+                  <img src="pfp.jpeg" alt="Profile Photo" />
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-3/5 space-y-4">
+              <h3 class="text-2xl font-bold text-secondary">
+                Hello! I'm Fahad (Shoron)
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                I'm a CSE student at the University of Liberal Arts Bangladesh
+                (ULAB), passionate about UI/UX design and frontend development.
+                I create clean, modern, and user-friendly web interfaces.
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                With skills in Tailwind CSS, DaisyUI, and design tools, I build
+                lightweight yet visually compelling web applications. My goal is
+                to grow as a designer-developer and build my own freelance
+                business.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="badge badge-primary badge-outline"
+                  >UI/UX Design</span
+                >
+                <span class="badge badge-secondary badge-outline"
+                  >Frontend Dev</span
+                >
+                <span class="badge badge-accent badge-outline"
+                  >Tailwind CSS</span
+                >
+                <span class="badge badge-neutral badge-outline"
+                  >Freelancer</span
+                >
+              </div>
+              <div class="pt-4">
+                <a href="#" class="btn btn-primary btn-sm">View Portfolio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="section-pad bg-base-100">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12 reveal">
+            <p
+              class="text-primary font-semibold uppercase tracking-widest text-sm mb-2"
+            >
+              What I Offer
+            </p>
+            <h2 class="text-4xl font-bold mb-3">Services</h2>
+            <p class="text-base-content/60 max-w-xl mx-auto">
+              End-to-end digital solutions tailored to your goals.
+            </p>
+          </div>
+
+          <!-- 6 Columns Grid Start -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+            <div class="card bg-base-200 card-hover p-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center text-xl mb-4"
+              >
+                <span class="material-symbols-outlined text-2xl">language</span>
+              </div>
+              <h3 class="font-bold text-lg mb-2">Web Development</h3>
+              <p class="text-sm text-base-content/65 leading-relaxed">
+                Full-stack web apps with React, Next.js, Node.js, and modern
+                databases. Scalable, secure, and fast.
+              </p>
+            </div>
+
+            <div class="card bg-base-200 card-hover p-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center text-xl mb-4"
+              >
+                <span class="material-symbols-outlined text-2xl">palette</span>
+              </div>
+              <h3 class="font-bold text-lg mb-2">UI/UX Design</h3>
+              <p class="text-sm text-base-content/65 leading-relaxed">
+                Research-backed design that converts — wireframes, prototypes,
+                and production-ready Figma files.
+              </p>
+            </div>
+
+            <div class="card bg-base-200 card-hover p-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-accent/15 text-accent flex items-center justify-center text-xl mb-4"
+              >
+                <span class="material-symbols-outlined text-2xl"
+                  >smartphone</span
+                >
+              </div>
+              <h3 class="font-bold text-lg mb-2">Mobile Apps</h3>
+              <p class="text-sm text-base-content/65 leading-relaxed">
+                React Native apps for iOS and Android — built with the same care
+                and performance standards as web.
+              </p>
+            </div>
+
+            <div class="card bg-base-200 card-hover p-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-success/15 text-success flex items-center justify-center text-xl mb-4"
+              >
+                <span class="material-symbols-outlined text-2xl">api</span>
+              </div>
+              <h3 class="font-bold text-lg mb-2">API Development</h3>
+              <p class="text-sm text-base-content/65 leading-relaxed">
+                RESTful and GraphQL APIs designed for reliability, security, and
+                developer experience.
+              </p>
+            </div>
+
+            <div class="card bg-base-200 card-hover p-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-warning/15 text-warning flex items-center justify-center text-xl mb-4"
+              >
+                <span class="material-symbols-outlined text-2xl">cloud</span>
+              </div>
+              <h3 class="font-bold text-lg mb-2">Cloud & DevOps</h3>
+              <p class="text-sm text-base-content/65 leading-relaxed">
+                AWS, Vercel, and Docker deployments with CI/CD pipelines for
+                zero-downtime delivery.
+              </p>
+            </div>
+
+            <div class="card bg-base-200 card-hover p-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-error/15 text-error flex items-center justify-center text-xl mb-4"
+              >
+                <span class="material-symbols-outlined text-2xl"
+                  >shopping_cart</span
+                >
+              </div>
+              <h3 class="font-bold text-lg mb-2">E-Commerce</h3>
+              <p class="text-sm text-base-content/65 leading-relaxed">
+                Custom Shopify & WooCommerce solutions with payment gateways,
+                inventory management, and analytics.
+              </p>
+            </div>
+          </div>
+          <!-- Grid End -->
+
+          <!-- View All Services Button (Placed OUTSIDE the grid) -->
+          <div class="flex justify-center text-center mt-10 py-6">
+            <a
+              href="services.html"
+              class="btn btn-outline btn-primary rounded-full"
+            >
+              View All Services
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <section class="section-pad bg-base-200">
+          <div class="container mx-auto px-6">
+            <div class="text-center mb-12 reveal">
+              <p
+                class="text-primary font-semibold uppercase tracking-widest text-sm mb-2"
+              >
+                Testimonials
+              </p>
+              <h2 class="text-4xl font-bold mb-3">What Clients Say</h2>
+              <p class="text-base-content/60 max-w-xl mx-auto">
+                Real feedback from people I've had the privilege of working
+                with.
+              </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 reveal">
+              <div class="card bg-base-100 shadow p-6 card-hover">
+                <div class="quote-mark text-primary">"</div>
+                <p
+                  class="text-base-content/75 text-sm leading-relaxed -mt-4 mb-5"
+                >
+                  Fahad completely redesigned our SaaS dashboard and the results
+                  were immediate — user engagement went up 40% and support
+                  tickets dropped significantly. Exceptional attention to
+                  detail.
+                </p>
+                <div class="flex items-center gap-3">
+                  <div class="avatar">
+                    <div class="w-10 rounded-full bg-primary/10">
+                      <img
+                        src="https://api.dicebear.com/8.x/personas/svg?seed=Samantha"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm">Samantha K.</p>
+                    <p class="text-xs text-base-content/50">
+                      CTO, TechFlow Inc.
+                    </p>
+                  </div>
+                </div>
+                <div class="rating rating-sm mt-3">
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow p-6 card-hover">
+                <div class="quote-mark text-secondary">"</div>
+                <p
+                  class="text-base-content/75 text-sm leading-relaxed -mt-4 mb-5"
+                >
+                  Delivered a full e-commerce platform in just 6 weeks. The code
+                  quality was impeccable and Alex communicated every step of the
+                  process. Will hire again without hesitation.
+                </p>
+                <div class="flex items-center gap-3">
+                  <div class="avatar">
+                    <div class="w-10 rounded-full bg-secondary/10">
+                      <img
+                        src="https://api.dicebear.com/8.x/personas/svg?seed=Marcus"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm">Marcus L.</p>
+                    <p class="text-xs text-base-content/50">
+                      Founder, ShopNova
+                    </p>
+                  </div>
+                </div>
+                <div class="rating rating-sm mt-3">
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow p-6 card-hover">
+                <div class="quote-mark text-accent">"</div>
+                <p
+                  class="text-base-content/75 text-sm leading-relaxed -mt-4 mb-5"
+                >
+                  We hired Fahad to build our mobile app and he nailed the UX on
+                  the first prototype. His ability to translate business
+                  requirements into intuitive interfaces is remarkable.
+                </p>
+                <div class="flex items-center gap-3">
+                  <div class="avatar">
+                    <div class="w-10 rounded-full bg-accent/10">
+                      <img
+                        src="https://api.dicebear.com/8.x/personas/svg?seed=Priya"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm">Priya M.</p>
+                    <p class="text-xs text-base-content/50">
+                      Product Lead, Vantage
+                    </p>
+                  </div>
+                </div>
+                <div class="rating rating-sm mt-3">
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                  <input
+                    type="radio"
+                    class="mask mask-star-2 bg-warning"
+                    checked
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer
+      class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+    >
+      <aside>
+        <p id="time">
+          Copyright © {new Date().getFullYear()} - All right reserved by
+          TechVeltro Industries Ltd
+        </p>
+      </aside>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

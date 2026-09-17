@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY Protfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <nav class="bg-base-100 shadow-sm">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
+              <li><a href="/service.html">Service</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./index.html"
+            >&lt;/Fahad Shoron&gt;</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+    <main class="h-screen flex-1">
+      <!-- ─── Page Title ─── -->
+      <section class="page-title-hero text-center">
+        <div class="container mx-auto px-6">
+          <h1 class="text-5xl font-bold mb-3 mt-12">Services</h1>
+          <p class="text-base-content/60 max-w-lg mx-auto">
+            Comprehensive digital solutions — from a single landing page to
+            enterprise SaaS platforms.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── All Services Grid ─── -->
+      <section class="section-pad bg-base-100">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12 reveal">
+            <p
+              class="text-primary font-semibold uppercase tracking-widest text-sm mb-2"
+            >
+              What I Do
+            </p>
+            <h2 class="text-4xl font-bold mb-3">All Services</h2>
+            <p class="text-base-content/60 max-w-xl mx-auto">
+              Every engagement starts with understanding your goals — then
+              executing with precision.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+            <!-- Web Development -->
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary text-3xl mb-3"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >language</span
+                  >
+                </div>
+                <h3 class="card-title text-xl">Web Development</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  End-to-end web applications built with React, Next.js,
+                  Node.js, and PostgreSQL. I handle everything from database
+                  schema to deployment pipeline.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ Custom web apps (SaaS, portals, dashboards)</li>
+                  <li>✓ REST & GraphQL API development</li>
+                  <li>✓ CMS integration (Contentful, Sanity)</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-primary badge-outline"
+                    >From $800</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-primary btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary text-3xl mb-3"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >palette</span
+                  >
+                </div>
+                <h3 class="card-title text-xl">UI/UX Design</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  User research, wireframing, high-fidelity Figma prototypes,
+                  and design systems that teams can build from confidently.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ UX research & user journey mapping</li>
+                  <li>✓ Figma prototypes & design systems</li>
+                  <li>✓ Usability testing & iteration</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-secondary badge-outline"
+                    >From $400</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-secondary btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile App Development -->
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center text-accent text-3xl mb-3"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >smartphone</span
+                  >
+                </div>
+                <h3 class="card-title text-xl">Mobile App Development</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Cross-platform iOS & Android apps using React Native — with
+                  native performance, smooth animations, and offline support.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ React Native (iOS + Android)</li>
+                  <li>✓ App Store & Play Store submission</li>
+                  <li>✓ Push notifications & analytics</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-accent badge-outline"
+                    >From $1,200</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-accent btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- E-Commerce Solutions -->
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-success/10 flex items-center justify-center text-success text-3xl mb-3"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >shopping_cart</span
+                  >
+                </div>
+                <h3 class="card-title text-xl">E-Commerce Solutions</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Custom Shopify themes, WooCommerce plugins, and headless
+                  commerce setups optimized for conversion and speed.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ Shopify / WooCommerce development</li>
+                  <li>✓ Payment gateway integration</li>
+                  <li>✓ Inventory & order management</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-success badge-outline"
+                    >From $600</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-success btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Cloud & DevOps -->
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-warning/10 flex items-center justify-center text-warning text-3xl mb-3"
+                >
+                  <span class="material-symbols-outlined text-3xl">cloud</span>
+                </div>
+                <h3 class="card-title text-xl">Cloud & DevOps</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Infrastructure setup, CI/CD pipelines, Docker
+                  containerization, and AWS/Vercel deployment with monitoring
+                  and alerting.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ AWS, Vercel, Railway deployment</li>
+                  <li>✓ Docker & Kubernetes basics</li>
+                  <li>✓ CI/CD with GitHub Actions</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-warning badge-outline"
+                    >From $500</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-warning btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Maintenance & Support -->
+            <div
+              class="card bg-base-100 border border-base-200 shadow-md card-hover"
+            >
+              <div class="card-body">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-error/10 flex items-center justify-center text-error text-3xl mb-3"
+                >
+                  <span class="material-symbols-outlined text-3xl">build</span>
+                </div>
+                <h3 class="card-title text-xl">Maintenance & Support</h3>
+                <p class="text-base-content/65 text-sm leading-relaxed">
+                  Ongoing technical support, performance monitoring, security
+                  updates, and feature additions for existing websites and apps.
+                </p>
+                <ul class="text-sm text-base-content/60 space-y-1 mt-3">
+                  <li>✓ Monthly retainer plans available</li>
+                  <li>✓ Bug fixes & performance audits</li>
+                  <li>✓ Security patches & updates</li>
+                </ul>
+                <div class="card-actions mt-4">
+                  <span class="badge badge-error badge-outline"
+                    >From $200/mo</span
+                  >
+                  <a
+                    href="contact.html"
+                    class="btn btn-error btn-sm rounded-full ml-auto"
+                    >Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── Client Logos ─── -->
+      <section class="py-16 bg-base-200">
+        <div class="container mx-auto px-6">
+          <p class="text-center text-base-content/50 font-medium mb-8 reveal">
+            Trusted by these companies
+          </p>
+          <div class="flex flex-wrap justify-center gap-8 items-center reveal">
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              TechFlow
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              ShopNova
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              Vantage AI
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              FinEdge
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              GlobalMed
+            </div>
+            <div
+              class="text-2xl font-bold text-base-content/30 hover:text-primary transition-colors cursor-default"
+            >
+              EduPath
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FAQ ─── -->
+      <section class="py-12 px-4 max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold mb-10  text-center">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-2">
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="faq" checked />
+            <div class="collapse-title font-medium">
+              How do I start a project with you?
+            </div>
+            <div class="collapse-content text-sm">
+              You can reach out through the contact form or email me directly
+              with your project details. We'll schedule a quick discussion to
+              understand your requirements, goals, and timeline before starting.
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="faq" />
+            <div class="collapse-title font-medium">
+              How long does a typical project take?
+            </div>
+            <div class="collapse-content text-sm">
+              Project timelines depend on the scope and complexity. A standard
+              landing page or simple website usually takes 1-2 weeks, while a
+              full-stack web app or complex system may take 3-6 weeks.
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="faq" />
+            <div class="collapse-title font-medium">
+              What are your payment terms?
+            </div>
+            <div class="collapse-content text-sm">
+              I usually work with a 50% upfront deposit to kickstart the
+              project, and the remaining 50% upon final completion and full
+              approval before final delivery.
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="faq" />
+            <div class="collapse-title font-medium">
+              Do you offer post-launch support?
+            </div>
+            <div class="collapse-content text-sm">
+              Yes, I provide free bug-fix support for 14-30 days after launch.
+              After that, you can choose one of my monthly maintenance & support
+              plans for ongoing updates.
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="faq" />
+            <div class="collapse-title font-medium">
+              Will I own the code and intellectual property?
+            </div>
+            <div class="collapse-content text-sm">
+              Yes, 100%. Once the final payment is cleared, full ownership of
+              the source code, design assets, and intellectual property will be
+              transferred to you.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-20 bg-primary text-primary-content text-center">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold mb-3 reveal">
+            Ready to Build Something Great?
+          </h2>
+          <p class="opacity-80 max-w-md mx-auto mb-8 reveal">
+            Let's talk about your project. Free consultation, no pressure.
+          </p>
+          <a
+            href="contact.html"
+            class="btn bg-primary-content text-primary rounded-full px-10 font-bold reveal"
+            >Start a Conversation</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer
+      class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+    >
+      <aside>
+        <p id="time">
+          Copyright © {new Date().getFullYear()} - All right reserved by
+          TechVeltro Industries Ltd
+        </p>
+      </aside>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
