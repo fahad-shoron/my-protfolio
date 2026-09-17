@@ -57,7 +57,7 @@
         </div>
       </div>
     </nav>
-    <main class="h-screen">
+    <main class="min-h-screen flex flex-col justify-between">
       <section class="page-title-hero text-center">
     <div class="container mx-auto px-6">
       
@@ -67,7 +67,7 @@
   </section>
 
   <!-- ─── Personal Biography ─── -->
-  <section class="section-pad bg-base-100 mt-20">
+  <section class="section-pad bg-base-100 mt-20 ">
     <div class="container mx-auto px-6">
       <div class="flex flex-col lg:flex-row gap-12 items-center reveal">
         <div class="lg:w-2/5 flex-shrink-0">
@@ -119,13 +119,14 @@
 
     </main>
 
-    <footer
+   <footer
       class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
     >
       <aside>
-        <p id="time">
-           Copyright © {new Date().getFullYear()} - All right reserved by TechVeltro
-          Industries Ltd
+        <p>
+          Copyright © - All right reserved by
+          TechVeltro Industries Ltd
+          <br><span id="time"></span> 
         </p>
       </aside>
     </footer>
